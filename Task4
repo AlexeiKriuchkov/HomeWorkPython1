@@ -1,0 +1,17 @@
+while True:
+    try:
+        n = int(input("Введите длин: "))
+        m = int(input("Введите ширину: "))
+        k = int(input("Введите количество кусочков: "))
+        if k < m * n:
+            if (k % m == 0 or k % n == 0):
+                print(f'Можно ломать!')
+                break
+            elif k == m * n:
+                print('Ломоть не нужно забери целиком!')
+                break
+            else:
+                print('Столько кусочков нет!')
+                break
+        except:
+print('Некоректный ввод. Попробуйте еще раз!')
